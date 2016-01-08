@@ -5,6 +5,7 @@ classes:
   - ntp
   - ulimit_asf
   - timezone
+  - mock_asf
 
 ntp::disable_monitor: true
 ntp::servers:
@@ -31,3 +32,6 @@ ulimit::rule:
 
 timezone::timezone: 'Etc/UTC'
 timezone::hw_utc: true
+
+ssh::params::sshd_keysdir: '/etc/ssh/ssh_keys'
+
